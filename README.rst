@@ -169,6 +169,8 @@ To easily find how a term is already translated in our documentation,
 you may use
 `find_in_po.py <https://gist.github.com/JulienPalard/c430ac23446da2081060ab17bf006ac1>`_.
 
+**टीप : TBD = to be decided = अजून ठरवायचे आहे**
+
 ========================== ===========================================
 Term                       Proposed Translation
 ========================== ===========================================
