@@ -169,45 +169,46 @@ To easily find how a term is already translated in our documentation,
 you may use
 `find_in_po.py <https://gist.github.com/JulienPalard/c430ac23446da2081060ab17bf006ac1>`_.
 
+**टीप : TBD = to be decided = अजून ठरवायचे आहे**
+
 ========================== ===========================================
 Term                       Proposed Translation
 ========================== ===========================================
--like
-abstract data type
-argument
-backslash
-bound
-bug
-built-in
-call stack
-debugging
-deep copy
-double quote
-e.g.
-garbage collector
-identifier
-immutable
-installer
-interpreter
-library
-list comprehension
-little-endian, big-endian
-mutable
-namespace
-parameter
-prompt
-raise
-regular expression
-return
-simple quote
-socket
-statement
-subprocess
-thread
-underscore
-expression
+-like                      -सम
+abstract data type         अमूर्त डेटा प्रकार
+argument                   कोनांक
+backslash                  बॅकस्लॅश
+bound                      बद्ध
+bug                        बग/किडा TBD
+built-in                   अंगभूत
+call stack                 कॉल स्टॅक context TBD
+debugging                  दोषनिवारण
+deep copy                  खोल प्रत context TBD
+double quote               दुहेरी अवतरण
+e.g.                       उदा.
+garbage collector          कचरा संग्रही
+identifier                 ओळखकर्ता
+immutable                  अपरिवर्तनीय
+installer                  इंस्टॉलर
+interpreter                संकेतवाचक
+library                    लायब्ररी
+list comprehension         यादी आकलन context TBD
+little-endian, big-endian  लहान-अंत्य, मोठे-अंत्य
+mutable                    परिवर्तनीय
+namespace                  नेमस्पेस
+parameter                  पॅरामीटर
+prompt                     कान
+raise                      वाढ context TBD
+regular expression         नियमित पदावली
+return                     परत context TBD
+simple quote               साधे अवतरण
+socket                     सॉकेट
+statement                  विधान
+subprocess                 उपप्रक्रिया
+thread                     धागा
+underscore                 अधोरेख
+expression                 पदावली
 ========================== ===========================================
-
 
 Simplify git diffs
 ------------------
