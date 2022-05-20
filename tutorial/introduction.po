@@ -3,22 +3,24 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-20 01:14+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-05-20 14:11+0900\n"
+"Last-Translator: \n"
+"Language-Team: Python doc Marathi\n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: tutorial/introduction.rst:5
 msgid "An Informal Introduction to Python"
-msgstr ""
+msgstr "पायथनचा एक अनोपचारिक परिचय"
 
 #: tutorial/introduction.rst:7
 msgid ""
@@ -29,6 +31,10 @@ msgid ""
 "that a secondary prompt on a line by itself in an example means you must "
 "type a blank line; this is used to end a multi-line command."
 msgstr ""
+"पुढील उदाहरणांमध्ये, कानाच्या(:term:`>>>` व :term:`...`) उपस्थिती किंवा अनुपस्थितीने "
+"इनपुट व आउटपुट मध्ये भेद केला आहे: उदाहरण चालवण्यासाठी, कान दिसल्यानंतर त्यासमोर टाईप "
+"करणे आवश्यक आहे (जणू की ते तुमच्या आदेशाची (कमांडची) कान लावून वाट बघत आहे); ज्या ओळी "
+"कानाने चालू होत नाहीत त्या ओळी संकेतवाचकाच्या आउटपुट म्हणून ओळखल्या जातात."
 
 #: tutorial/introduction.rst:16
 msgid ""
