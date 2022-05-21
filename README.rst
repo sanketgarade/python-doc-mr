@@ -120,7 +120,7 @@ You can contribute using:
 
 - Github
 - `transifex <https://www.transifex.com/python-doc/public/>`_
-- Or just by opening `an issue on github <https://github.com/python/python-docs-mrfr/issues>`_
+- Or just by opening `an issue on github <https://github.com/python/python-docs-mr/issues>`_
 
 
 Contributing using Github
