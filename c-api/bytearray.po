@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-20 01:14+0900\n"
+"POT-Creation-Date: 2026-08-21 11:27-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -53,47 +54,76 @@ msgstr ""
 
 #: c-api/bytearray.rst:42
 msgid ""
-"Return a new bytearray object from any object, *o*, that implements the :ref:"
-"`buffer protocol <bufferobjects>`."
+"Return a new bytearray object from any object, *o*, that implements "
+"the :ref:`buffer protocol <bufferobjects>`."
 msgstr ""
 
-#: c-api/bytearray.rst:48
+#: c-api/bytearray.rst:56 c-api/bytearray.rst:63
+msgid "On failure, return ``NULL`` with an exception set."
+msgstr ""
+
+#: c-api/bytearray.rst:66
 msgid ""
-"Create a new bytearray object from *string* and its length, *len*.  On "
-"failure, ``NULL`` is returned."
+"If the object implements the buffer protocol, then the buffer must not be "
+"mutated while the bytearray object is being created."
 msgstr ""
 
 #: c-api/bytearray.rst:54
+msgid "Create a new bytearray object from *string* and its length, *len*."
+msgstr ""
+
+#: c-api/bytearray.rst:61
 msgid ""
 "Concat bytearrays *a* and *b* and return a new bytearray with the result."
 msgstr ""
 
-#: c-api/bytearray.rst:59
+#: c-api/bytearray.rst:72
 msgid "Return the size of *bytearray* after checking for a ``NULL`` pointer."
 msgstr ""
 
-#: c-api/bytearray.rst:64
+#: c-api/bytearray.rst:77
 msgid ""
 "Return the contents of *bytearray* as a char array after checking for a "
 "``NULL`` pointer.  The returned array always has an extra null byte appended."
 msgstr ""
 
-#: c-api/bytearray.rst:71
-msgid "Resize the internal buffer of *bytearray* to *len*."
+#: c-api/bytearray.rst:104
+msgid ""
+"It is not thread-safe to mutate the bytearray object while using the "
+"returned char array."
 msgstr ""
 
-#: c-api/bytearray.rst:74
+#: c-api/bytearray.rst:87
+msgid ""
+"Resize the internal buffer of *bytearray* to *len*. Failure is a ``-1`` "
+"return with an exception set."
+msgstr ""
+
+#: c-api/bytearray.rst:90
+msgid ""
+"A negative *len* will now result in an exception being set and -1 returned."
+msgstr ""
+
+#: c-api/bytearray.rst:95
 msgid "Macros"
 msgstr ""
 
-#: c-api/bytearray.rst:76
+#: c-api/bytearray.rst:97
 msgid "These macros trade safety for speed and they don't check pointers."
 msgstr ""
 
-#: c-api/bytearray.rst:80
-msgid "Macro version of :c:func:`PyByteArray_AsString`."
+#: c-api/bytearray.rst:101
+msgid "Similar to :c:func:`PyByteArray_AsString`, but without error checking."
 msgstr ""
 
-#: c-api/bytearray.rst:85
-msgid "Macro version of :c:func:`PyByteArray_Size`."
+#: c-api/bytearray.rst:109
+msgid "Similar to :c:func:`PyByteArray_Size`, but without error checking."
+msgstr ""
+
+#: c-api/bytearray.rst:8
+msgid "object"
+msgstr ""
+
+#: c-api/bytearray.rst:8
+msgid "bytearray"
 msgstr ""

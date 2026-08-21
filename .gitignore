@@ -1,9 +1,9 @@
 *.mo
 .potodo/
-" .tx/**/*.po
-" venv/
-" .idea/
-" .DS_Store
-" .pospell/
-" locales/
-" .venv/
+.tx/**/*.po
+venv/
+.idea/
+.DS_Store
+.pospell/
+locales/
+.venv/

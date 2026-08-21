@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-20 01:14+0900\n"
+"POT-Creation-Date: 2026-08-21 11:27-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -45,10 +46,18 @@ msgid ""
 "which usually looks like this:"
 msgstr ""
 
+#: faq/windows.rst:35
+msgid "C:\\>"
+msgstr ""
+
 #: faq/windows.rst:39
 msgid ""
 "The letter may be different, and there might be other things after it, so "
 "you might just as easily see something like:"
+msgstr ""
+
+#: faq/windows.rst:42
+msgid "D:\\YourName\\Projects\\Python>"
 msgstr ""
 
 #: faq/windows.rst:46
@@ -74,8 +83,21 @@ msgid ""
 "return:"
 msgstr ""
 
+#: faq/windows.rst:60
+msgid "C:\\Users\\YourName> py"
+msgstr ""
+
 #: faq/windows.rst:64
 msgid "You should then see something like:"
+msgstr ""
+
+#: faq/windows.rst:66
+msgid ""
+"Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit "
+"(Intel)] on win32\n"
+"Type \"help\", \"copyright\", \"credits\" or \"license\" for more "
+"information.\n"
+">>>"
 msgstr ""
 
 #: faq/windows.rst:72
@@ -86,23 +108,31 @@ msgid ""
 "Check it by entering a few expressions of your choice and seeing the results:"
 msgstr ""
 
+#: faq/windows.rst:77
+msgid ""
+">>> print(\"Hello\")\n"
+"Hello\n"
+">>> \"Hello\" * 3\n"
+"'HelloHelloHello'"
+msgstr ""
+
 #: faq/windows.rst:84
 msgid ""
 "Many people use the interactive mode as a convenient yet highly programmable "
-"calculator.  When you want to end your interactive Python session, call the :"
-"func:`exit` function or hold the :kbd:`Ctrl` key down while you enter a :kbd:"
-"`Z`, then hit the \":kbd:`Enter`\" key to get back to your Windows command "
-"prompt."
+"calculator.  When you want to end your interactive Python session, call "
+"the :func:`exit` function or hold the :kbd:`Ctrl` key down while you enter "
+"a :kbd:`Z`, then hit the \":kbd:`Enter`\" key to get back to your Windows "
+"command prompt."
 msgstr ""
 
 #: faq/windows.rst:90
 msgid ""
-"You may also find that you have a Start-menu entry such as :menuselection:"
-"`Start --> Programs --> Python 3.x --> Python (command line)` that results "
-"in you seeing the ``>>>`` prompt in a new window.  If so, the window will "
-"disappear after you call the :func:`exit` function or enter the :kbd:`Ctrl-"
-"Z` character; Windows is running a single \"python\" command in the window, "
-"and closes it when you terminate the interpreter."
+"You may also find that you have a Start-menu entry such "
+"as :menuselection:`Start --> Programs --> Python 3.x --> Python (command "
+"line)` that results in you seeing the ``>>>`` prompt in a new window.  If "
+"so, the window will disappear after you call the :func:`exit` function or "
+"enter the :kbd:`Ctrl-Z` character; Windows is running a single \"python\" "
+"command in the window, and closes it when you terminate the interpreter."
 msgstr ""
 
 #: faq/windows.rst:97
@@ -114,10 +144,20 @@ msgid ""
 "home directory so you're seeing something similar to::"
 msgstr ""
 
+#: faq/windows.rst:104
+msgid "C:\\Users\\YourName>"
+msgstr ""
+
 #: faq/windows.rst:106
 msgid ""
 "So now you'll ask the ``py`` command to give your script to Python by typing "
 "``py`` followed by your script path::"
+msgstr ""
+
+#: faq/windows.rst:110
+msgid ""
+"C:\\Users\\YourName> py Desktop\\hello.py\n"
+"hello"
 msgstr ""
 
 #: faq/windows.rst:114
@@ -205,11 +245,12 @@ msgstr ""
 
 #: faq/windows.rst:170
 msgid ""
-"Do _not_ build Python into your .exe file directly.  On Windows, Python must "
-"be a DLL to handle importing modules that are themselves DLL's.  (This is "
-"the first key undocumented fact.)  Instead, link to :file:`python{NN}.dll`; "
-"it is typically installed in ``C:\\Windows\\System``.  *NN* is the Python "
-"version, a number such as \"33\" for Python 3.3."
+"Do **not** build Python into your .exe file directly.  On Windows, Python "
+"must be a DLL to handle importing modules that are themselves DLL's.  (This "
+"is the first key undocumented fact.)  Instead, link "
+"to :file:`python{NN}.dll`; it is typically installed in ``C:"
+"\\Windows\\System``.  *NN* is the Python version, a number such as \"33\" "
+"for Python 3.3."
 msgstr ""
 
 #: faq/windows.rst:176
@@ -237,8 +278,8 @@ msgid ""
 "If you use SWIG, it is easy to create a Python \"extension module\" that "
 "will make the app's data and methods available to Python.  SWIG will handle "
 "just about all the grungy details for you.  The result is C code that you "
-"link *into* your .exe file (!)  You do _not_ have to create a DLL file, and "
-"this also simplifies linking."
+"link *into* your .exe file (!)  You do **not** have to create a DLL file, "
+"and this also simplifies linking."
 msgstr ""
 
 #: faq/windows.rst:197
@@ -263,6 +304,15 @@ msgid ""
 "interpreter with your extension module."
 msgstr ""
 
+#: faq/windows.rst:210
+msgid ""
+"#include <Python.h>\n"
+"...\n"
+"Py_Initialize();  // Initialize Python.\n"
+"initmyAppc();  // Initialize (import) the helper class.\n"
+"PyRun_SimpleString(\"import myApp\");  // Import the shadow class."
+msgstr ""
+
 #: faq/windows.rst:218
 msgid ""
 "There are two problems with Python's C API which will become apparent if you "
@@ -271,10 +321,10 @@ msgstr ""
 
 #: faq/windows.rst:221
 msgid ""
-"Problem 1: The so-called \"Very High Level\" functions that take FILE * "
+"Problem 1: The so-called \"Very High Level\" functions that take ``FILE *`` "
 "arguments will not work in a multi-compiler environment because each "
-"compiler's notion of a struct FILE will be different.  From an "
-"implementation standpoint these are very _low_ level functions."
+"compiler's notion of a ``struct FILE`` will be different.  From an "
+"implementation standpoint these are very low level functions."
 msgstr ""
 
 #: faq/windows.rst:226
@@ -283,11 +333,22 @@ msgid ""
 "void functions:"
 msgstr ""
 
+#: faq/windows.rst:229
+msgid ""
+"Py_INCREF(Py_None);\n"
+"_resultobj = Py_None;\n"
+"return _resultobj;"
+msgstr ""
+
 #: faq/windows.rst:235
 msgid ""
 "Alas, Py_None is a macro that expands to a reference to a complex data "
 "structure called _Py_NoneStruct inside pythonNN.dll.  Again, this code will "
 "fail in a mult-compiler environment.  Replace such code by:"
+msgstr ""
+
+#: faq/windows.rst:239
+msgid "return Py_BuildValue(\"\");"
 msgstr ""
 
 #: faq/windows.rst:243
@@ -323,17 +384,17 @@ msgstr ""
 #: faq/windows.rst:262
 msgid ""
 "Under any editor, mixing tabs and spaces is a bad idea.  MSVC is no "
-"different in this respect, and is easily configured to use spaces: Take :"
-"menuselection:`Tools --> Options --> Tabs`, and for file type \"Default\" "
-"set \"Tab size\" and \"Indent size\" to 4, and select the \"Insert spaces\" "
-"radio button."
+"different in this respect, and is easily configured to use spaces: "
+"Take :menuselection:`Tools --> Options --> Tabs`, and for file type "
+"\"Default\" set \"Tab size\" and \"Indent size\" to 4, and select the "
+"\"Insert spaces\" radio button."
 msgstr ""
 
 #: faq/windows.rst:267
 msgid ""
 "Python raises :exc:`IndentationError` or :exc:`TabError` if mixed tabs and "
-"spaces are causing problems in leading whitespace. You may also run the :mod:"
-"`tabnanny` module to check a directory tree in batch mode."
+"spaces are causing problems in leading whitespace. You may also run "
+"the :mod:`tabnanny` module to check a directory tree in batch mode."
 msgstr ""
 
 #: faq/windows.rst:274
@@ -345,4 +406,17 @@ msgid ""
 "Use the :mod:`msvcrt` module.  This is a standard Windows-specific extension "
 "module. It defines a function ``kbhit()`` which checks whether a keyboard "
 "hit is present, and ``getch()`` which gets one character without echoing it."
+msgstr ""
+
+#: faq/windows.rst:281
+msgid "How do I solve the missing api-ms-win-crt-runtime-l1-1-0.dll error?"
+msgstr ""
+
+#: faq/windows.rst:283
+msgid ""
+"This can occur on Python 3.5 and later when using Windows 8.1 or earlier "
+"without all updates having been installed. First ensure your operating "
+"system is supported and is up to date, and if that does not resolve the "
+"issue, visit the `Microsoft support page <https://support.microsoft.com/en-"
+"us/help/3118401/>`_ for guidance on manually installing the C Runtime update."
 msgstr ""

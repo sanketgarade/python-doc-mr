@@ -8,16 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-20 01:14+0900\n"
+"POT-Creation-Date: 2026-08-21 11:27-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: library/email.charset.rst:2
-msgid ":mod:`email.charset`: Representing character sets"
+msgid ":mod:`!email.charset`: Representing character sets"
 msgstr ""
 
 #: library/email.charset.rst:7
@@ -41,12 +42,12 @@ msgid ""
 "This module provides a class :class:`Charset` for representing character "
 "sets and character set conversions in email messages, as well as a character "
 "set registry and several convenience methods for manipulating this registry. "
-"Instances of :class:`Charset` are used in several other modules within the :"
-"mod:`email` package."
+"Instances of :class:`Charset` are used in several other modules within "
+"the :mod:`email` package."
 msgstr ""
 
 #: library/email.charset.rst:22
-msgid "Import this class from the :mod:`email.charset` module."
+msgid "Import this class from the :mod:`!email.charset` module."
 msgstr ""
 
 #: library/email.charset.rst:27
@@ -104,8 +105,8 @@ msgstr ""
 #: library/email.charset.rst:69
 msgid ""
 "Same as *header_encoding*, but describes the encoding for the mail message's "
-"body, which indeed may be different than the header encoding. ``charset."
-"SHORTEST`` is not allowed for *body_encoding*."
+"body, which indeed may be different than the header encoding. "
+"``charset.SHORTEST`` is not allowed for *body_encoding*."
 msgstr ""
 
 #: library/email.charset.rst:76
@@ -204,8 +205,8 @@ msgstr ""
 
 #: library/email.charset.rst:152
 msgid ""
-"Returns *input_charset* as a string coerced to lower case. :meth:`__repr__` "
-"is an alias for :meth:`__str__`."
+"Returns *input_charset* as a string coerced to lower case. :meth:`!__repr__` "
+"is an alias for :meth:`!__str__`."
 msgstr ""
 
 #: library/email.charset.rst:158
@@ -222,7 +223,7 @@ msgstr ""
 
 #: library/email.charset.rst:167
 msgid ""
-"The :mod:`email.charset` module also provides the following functions for "
+"The :mod:`!email.charset` module also provides the following functions for "
 "adding new entries to the global character set, alias, and codec registries:"
 msgstr ""
 
@@ -288,6 +289,6 @@ msgstr ""
 #: library/email.charset.rst:211
 msgid ""
 "*charset* is the canonical name of a character set. *codecname* is the name "
-"of a Python codec, as appropriate for the second argument to the :class:"
-"`str`'s :meth:`~str.encode` method."
+"of a Python codec, as appropriate for the second argument to "
+"the :class:`str`'s :meth:`~str.encode` method."
 msgstr ""

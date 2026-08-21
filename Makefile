@@ -21,12 +21,12 @@
 # from which we generated our po files.  We use it here so when we
 # test build, we're building with the .rst files that generated our
 # .po files.
-CPYTHON_CURRENT_COMMIT := eec8e61992fb654d4cf58de4d727c18622b8303e
+CPYTHON_CURRENT_COMMIT := d3fe3de54b50b96b9b96a18195128f55093d7c30
 
 CPYTHON_PATH := ../cpython/
 
 LANGUAGE := mr
-BRANCH := 3.9
+BRANCH := 3.14
 
 EXCLUDED := whatsnew/ c-api/
 
@@ -52,8 +52,10 @@ endif
 
 ifeq ($(detected_OS),Darwin)        # Mac OS X
     CP_CMD := gcp                   # accessible with `brew install coreutils` or `brew upgrade coreutils`
+	SED_CMD := gsed
 else
     CP_CMD := cp
+	SED_CMD := sed
 endif
 
 .PHONY: all
@@ -161,7 +163,7 @@ merge: ensure_prerequisites
 	        fi \
 	    done
 	rm -fr $(CPYTHON_PATH)/pot/
-	sed -i 's|^#: .*Doc/|#: |' *.po */*.po
+	$(SED_CMD) -i 's|^#: .*Doc/|#: |' *.po */*.po
 	powrap -m
 	@printf "\n%s %s\n" "Replace CPYTHON_CURRENT_COMMIT in Makefile by: " $(shell git -C $(CPYTHON_PATH) rev-parse HEAD)
 	@printf 'To add, you can use:\n  git status -s | grep "^ M .*\.po" | cut -d" " -f3 | while read -r file; do if [ $$(git diff "$$file" | wc -l) -gt 13 ]; then git add "$$file"; fi ; done\n'
